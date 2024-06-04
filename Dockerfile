@@ -1,6 +1,6 @@
-FROM nginx
+FROM quay.io/ysachin/nginx:latest
 MAINTAINER "Sachin Yadav"
-RUN apt-get update -y
-RUN apt-get install apache2 apache2-utils net-tools vim wget  zip unzip -y
+WORKDIR /opt
+RUN apt-get install bind* -y
 ENTRYPOINT ["apachectl", "-D", "FOREGROUND"]
 EXPOSE 80
