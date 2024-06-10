@@ -10,7 +10,6 @@ ADD https://github.com/sachin78y/docker-images/raw/master/nginx.conf /tmp
 
 RUN cp  /tmp/nginx.conf /etc/nginx/nginx.conf
 
-RUN echo "Welcome to India" > /usr/share/nginx/html/index.html
 
 RUN rm -rf /tmp/nginx.conf
 
