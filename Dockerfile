@@ -8,7 +8,7 @@ RUN mkdir -p /var/cache/nginx/client_temp /var/run/nginx \
 # Copy custom Nginx configuration file to the container
 ADD https://github.com/sachin78y/docker-images/raw/master/nginx.conf /tmp
 
-RUN echo "Good Morning" > /usr/share/nginx/html/index.html
+RUN echo "Welcome to Hitachi System India" >> /usr/share/nginx/html/index.html
 RUN cp  /tmp/nginx.conf /etc/nginx/nginx.conf
 
 
