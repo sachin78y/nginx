@@ -11,7 +11,7 @@ RUN cp  /tmp/nginx.conf /etc/nginx/nginx.conf
 
 RUN rm -rf /tmp/nginx.conf
 
-RUN echo "Hi There How are you"  > /usr/share/nginx/html/index.html
+RUN echo "Mero man lage barsane jaha biraje radha rani"  > /usr/share/nginx/html/index.html
 
 # Expose port 8080
 EXPOSE 8080
