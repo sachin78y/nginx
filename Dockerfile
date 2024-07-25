@@ -11,7 +11,7 @@ RUN cp  /tmp/nginx.conf /etc/nginx/nginx.conf
 
 RUN rm -rf /tmp/nginx.conf
 
-RUN echo "Welcome to hitachi For First"  > /usr/share/nginx/html/index.html
+#RUN echo "Welcome to hitachi For First"  > /usr/share/nginx/html/index.html
 
 # Expose port 8080
 EXPOSE 8080
